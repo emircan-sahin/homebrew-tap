@@ -1,6 +1,6 @@
 cask "gitviber" do
-  version "0.1.0"
-  sha256 "bd7fcfd32097c1a9c71de03c45ea3ce0ff6977964aada493e4d8747e1131113b"
+  version "0.1.1"
+  sha256 "fcbc562ff62c131a934816742c42e5639b15f6bf5e03d6bedb708d8a48f417f1"
 
   url "https://github.com/emircan-sahin/gitviber/releases/download/v#{version}/GitViber_#{version}_universal.dmg"
   name "GitViber"
@@ -16,6 +16,8 @@ cask "gitviber" do
   depends_on macos: :ventura
 
   app "GitViber.app"
+  # The `gitviber` command (src-tauri/resources/gitviber), linked into Homebrew's bin.
+  binary "#{appdir}/GitViber.app/Contents/Resources/bin/gitviber"
 
   zap trash: [
     "~/Library/Caches/app.gitviber.desktop",
