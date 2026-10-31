@@ -1,9 +1,9 @@
 cask "gitviber" do
   arch arm: "aarch64", intel: "x64"
 
-  version "0.1.20"
-  sha256 arm:   "d89bde5bf922b6e705e60c46b895b9216b049d172313a1eea65df8da3ee2b2db",
-         intel: "8111e08df0596b96641e2d363eefb78ac02a7df559df425bb5ba72f46aa9de8f"
+  version "0.1.21"
+  sha256 arm:   "b1de3ba143535d71632a5fec6d3bbf2cb84fef662eb1bbbffbe63ccb58c10a04",
+         intel: "cf2cfae6eb372e33b9d177fe5a7937ef585ae855ebdb4362fc0ef4e2c7ab0477"
 
   url "https://github.com/emircan-sahin/gitviber/releases/download/v#{version}/GitViber_#{version}_#{arch}.dmg"
   name "GitViber"
